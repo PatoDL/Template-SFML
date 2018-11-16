@@ -1,20 +1,23 @@
 #include "SFML/Graphics.hpp"
 #include "STP/TMXLoader.hpp"
+#include "STP\Core\ObjectGroup.hpp"
 #include "SFML\Graphics\Texture.hpp"
 #include "SFML\Graphics\Sprite.hpp"
+#include "SFML\Graphics\RectangleShape.hpp"
 
 using namespace sf;
 
 Texture texture;
 Sprite sprite;
+RectangleShape collider;
 
-static void cargarTextura()
+void cargarTextura()
 {
 	texture.loadFromFile("res/xd.png");
 	sprite.setTexture(texture);
 }
 
-static void setSpriteConf()
+void setSpriteConf()
 {
 	sprite.setPosition(90.f, 90.f);
 }
@@ -37,6 +40,8 @@ int main()
 
 	map.ShowObjects(); // Display all the layer objects.
 
+	initSprite();
+
 	float recY = 0.f;
 
 	sf::View view1;
@@ -56,6 +61,8 @@ int main()
 
 		window.setView(view1);
 		sf::View currentview = window.getView();
+
+		sprite.setPosition(view1.getCenter().x-sprite.getLocalBounds().width/2, view1.getCenter().y-sprite.getLocalBounds().height/2);
 
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
 		{

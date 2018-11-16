@@ -15,12 +15,21 @@
     <ClCompile Include="Screen.cpp">
       <Filter>Juego</Filter>
     </ClCompile>
+    <ClCompile Include="character.cpp">
+      <Filter>Juego</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Juego.h">
       <Filter>Juego</Filter>
     </ClInclude>
     <ClInclude Include="Screen.h">
+      <Filter>Juego</Filter>
+    </ClInclude>
+    <ClInclude Include="character.h">
+      <Filter>Juego</Filter>
+    </ClInclude>
+    <ClInclude Include="protagonista.h">
       <Filter>Juego</Filter>
     </ClInclude>
   </ItemGroup>

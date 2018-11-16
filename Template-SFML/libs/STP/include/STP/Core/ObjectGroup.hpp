@@ -81,6 +81,7 @@ class STP_API ObjectGroup : public MapObject {
     ////////////////////////////////////////////////////////////
     class Object;
 
+	std::vector<tmx::ObjectGroup::Object> objects_;
     ////////////////////////////////////////////////////////////
     /// \brief Add a new Object to the object group
     ///
@@ -109,7 +110,7 @@ class STP_API ObjectGroup : public MapObject {
     void draw(sf::RenderTarget& target, sf::RenderStates states) const;
 
  private:
-    std::vector<tmx::ObjectGroup::Object> objects_;
+    
 };
 
 ////////////////////////////////////////////////////////////
