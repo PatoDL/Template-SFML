@@ -1,5 +1,6 @@
 bin
 objs
+debug
 release
 .vs
 /Pong/libs/SFML-2.5.1/doc
