@@ -3,9 +3,9 @@ objs
 debug
 release
 .vs
-/Pong/libs/SFML-2.5.1/doc
-/Pong/libs/SFML-2.5.1/examples
-!/Pong/libs/SFML-2.5.1/bin
-!/Pong/libs/STP/bin
+/Template SFML/libs/SFML-2.5.1/doc
+/Template SFML/libs/SFML-2.5.1/examples
+!/Template SFML/libs/SFML-2.5.1/bin
+!/Template SFML/libs/STP/bin
 *.opendb
 *.db
